@@ -1,0 +1,74 @@
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    transition: all 0.5s;
+        &_link {
+            color: black;
+            text-decoration: none;;
+        }
+        &_fz12 {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+            transition: all 0.5s;
+        }
+
+        &_fz14 {
+                font-size: 14px;
+                line-height: 21px;
+                transition: all 0.5s;
+                }
+        
+        &_fz16 {
+                font-size: 16px;
+                line-height: 24px;
+                transition: all 0.5s;
+                &__sidepanel {
+                    margin-right: 15px;
+                }
+            }
+
+        &_fz20 {
+                font-size: 20px;
+                line-height: 30px;
+                transition: all 0.5s;
+            }    
+
+        &_fz36 {
+            font-size: 37px;
+            transition: all 0.5s;
+        }
+
+        &_fz48 {
+                font-size: 48px;
+                line-height: 60px;
+                transition: all 0.5s;
+                }
+
+        &_white {
+            transition: all 0.5s;
+            &:hover {
+                color: white;
+                text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.40);
+                 }
+            }  
+
+        .title_ukraine {
+            transition: all 0.5s;
+            &:hover {
+                .title_ukr_yellow {         
+                            color: rgb(225, 225, 0);
+                            text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.40);
+                    }
+                .title_ukr_blue {
+                            transition: all 0.5s;
+                            color: rgb(0, 87, 184);
+                            text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.40);
+                    }
+            }
+        }    
+        }
+
+
+

@@ -1,0 +1,42 @@
+.use {
+    margin-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        &:hover {
+                font-size: 17px;
+            }
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -6px;
+            
+        }
+    }
+    &__subtitle {
+        margin-top: 15px;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 270px);
+        grid-template-rows: minmax(270px, 100%);
+        grid-auto-rows: minmax(100%);
+        justify-content: center;
+        
+        gap: 13px;
+    }
+    &__item {
+        padding: 30px;
+        border: 1px solid black;
+        border-radius: 5px;
+        &_title {
+            margin-top: 20px;
+        }
+        &_descr {
+            margin-top: 15px;
+        }
+    }
+}

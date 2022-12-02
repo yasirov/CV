@@ -1,0 +1,25 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/promo/promo_main.jpg') no-repeat center center / cover; 
+
+    padding-top: 206px;
+    &__titles {
+        margin-top: 10px;
+        max-width: 532px;
+    }
+    &__btns {
+        display: flex;
+        width: 248px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        @include before_circle;
+        z-index: 2;
+    }
+
+}
