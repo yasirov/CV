@@ -1,3 +1,28 @@
 .portfolio {
-    margin-top: 120px;
+        margin-top: 120px;
+    &__subtitle {
+        margin-top: 6px;
+        text-align: center;
+        }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(1, 280px);
+        grid-auto-rows: 280px;
+        gap: 5px;
+    }  
+    &__item {
+        transition: all 0.5s;
+        filter: saturate(0%);
+        &_1, &_4 {
+            filter: saturate(100%);
+        }
+        img {
+            width: 100%;
+        }
+        &:hover {
+            filter: saturate(100%);
+        }
+    }
 }

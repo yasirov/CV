@@ -67,8 +67,24 @@
                             text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.40);
                     }
             }
-        }    
         }
+        &__section__title {
+            position: relative;
+                text-align: center;
+            
+                &:hover {
+                    font-size: 17px;
+                }
+            
+                @include before_circle;
+            
+                &:before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -6px;
+                }
+        }    
+    }
 
 
 
