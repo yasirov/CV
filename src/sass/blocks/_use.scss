@@ -18,11 +18,20 @@
         padding: 30px;
         border: 1px solid black;
         border-radius: 5px;
+        &_image {
+        text-align: center;
+        }
         &_title {
             margin-top: 20px;
         }
         &_descr {
             margin-top: 15px;
+        }
+        &_3, &_4 {
+            img {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
         }
     }
 }

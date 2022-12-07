@@ -8,7 +8,11 @@
         margin-top: 10px;
         max-width: 532px;
     }
+    &__title {
+        margin-top: 20px;
+    }
     &__btns {
+        margin-top: 15px;
         display: flex;
         width: 248px;
         justify-content: space-between;
