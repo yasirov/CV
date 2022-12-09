@@ -24,10 +24,17 @@
         &_black_github {
             background: url(../icons/social/github.svg) no-repeat;
             background-size: 20px;
-
             &:hover {
                 background: url(../icons/social/github_white.svg) no-repeat;
                 background-size: 20px;
+            }
+        }
+        &_black_telegram {
+            background: url(../icons/social/telegram.svg) no-repeat;
+            background-size: 18px;
+            &:hover {
+                background: url(../icons/social/telegram_white.svg) no-repeat;
+                background-size: 18px;
             }
         }
     }

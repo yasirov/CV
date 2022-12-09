@@ -51,8 +51,10 @@
     <aside class="sidepanel">
             <h2 class="title_fz16 title_fz16__sidepanel title_white">social networks</h2>
             <div class="sidepanel__divider title_white"></div>
-            <a href="" class="sidepanel__link"><div class="sidepanel__img sidepanel__img_black_github"></a>
-            <a href="" class="sidepanel__link"><div class="sidepanel__img sidepanel__img_black_linkedin"></div></a>
+            <a href="#" class="sidepanel__link"><div class="sidepanel__img sidepanel__img_black_github"></a>
+            <a href="#" class="sidepanel__link"><div class="sidepanel__img sidepanel__img_black_telegram"></div></a>
+            <a href="#" class="sidepanel__link"><div class="sidepanel__img sidepanel__img_black_linkedin"></div></a>
+            
             </aside>
 
     <div class="menu">
@@ -67,8 +69,8 @@
             <nav>
                 <ul class="menu__list">
                     <li class="menu__link"><a href="#"></a>About me</li>
-                    <li class="menu__link"><a href="#"></a>Expirience</li>
-                    <li class="menu__link"><a href="#"></a>Skills</li>
+                    <li class="menu__link"><a href="#"></a>Education</li>
+                    <li class="menu__link"><a href="#"></a>Abilities</li>
                     <li class="menu__link"><a href="#"></a>Portfolio</li>
                     <li class="menu__link"><a href="#"></a>Contacts</li>
                 </ul>
@@ -302,7 +304,7 @@
     </section>
     <section class="price">
         <div class="container">
-            <h2 class="title title_fz16 price__title title__section__title">Price</h2>
+            <h2 class="title title_fz16 price__title title__section__title title__section__title">Price</h2>
             <div class="divider"></div>
             <div class="price__wrapper">
                     <div class="price__item price__item_1">
@@ -326,13 +328,46 @@
                         <div class="price__item__subtitle title title_fz12">Одностраничный сайт для презентации услуг</div>
                     </div>
             </div>
-            <section class="contact">
-                <div class="container">
-                    <div class="contact__wrapper">
-
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo"><img src="img/portrait/anton_yasirov_2.jpg" alt="anton_yasirov__photo"></div>
+                <div class="contacts__content">
+                    <div class="contacts__title title title_fz16">Contacts</div>
+                    <div class="contacts__subtitle title title_fz36">Contact with me</div>
+                    <div class="divider contacts__divider"></div>
+                    <div class="contacts__text title title_fz14">Any way you want: </div>
+                    <div class="social__img">
+                        <a href="#"><img class="contacts__link" src="icons/social/linkedin.svg" alt="linkedin__account"></a>
+                        <a href="#"><img class="contacts__link" src="icons/social/github.svg" alt="github__account"></a>
+                        <a href="https://t.me/anton_yasirov"><img class="contacts__link contacts__link__telegram"
+                                src="icons/social/telegram.svg" alt="github__account"></a>
                     </div>
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required placeholder="Full name" id="name" type="text">
+                            <label for="name">Your name</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required placeholder="name@mailer.com" id="email" type="email">
+                            <label for="email">Your email</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea placeholder="Type text here..." name="text" id="text"></textarea>
+                            <label for="text">Your message</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="btn contacts__btn contacts__btn__text">Send message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox"> 
+                                <span class="contacts__policy__text">I agree to the <a target="_blank" href="/policy.html">privacy policy</a></span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </section>
+            </div>
         </div>
     </section>
 

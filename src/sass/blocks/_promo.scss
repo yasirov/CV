@@ -25,5 +25,13 @@
         @include before_circle;
         z-index: 2;
     }
+    .btn {
+        &:hover {
+            width: 145px;
+            height: 55px;
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15);
+            .title_fz14_promo {font-size: 15px;}
+        }
+    }
 
 }
