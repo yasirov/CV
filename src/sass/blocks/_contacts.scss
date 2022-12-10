@@ -7,11 +7,13 @@
             grid-template-columns: 400px 585px;
             justify-content: space-between;
         }
+    &__content {
+        padding-top: 6px;
+    }    
     &__photo {
-        max-width: 400px;
-        img {
-            width: 100%;
-        }
+        width: 400px;
+        height: 555px;
+        object-fit: cover;
     }    
     &__title{
     margin-left: 14px;
@@ -120,6 +122,7 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         justify-content: space-between;
+        
         input {
             margin-right: 10px;
         }
