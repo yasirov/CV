@@ -1,6 +1,18 @@
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .container {
         max-width: 960px;
+    }
+    .sidepanel {
+        display: none;
+    }
+    .promo__titles {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 400px;
+    }
+    .promo__btns {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -8,17 +20,92 @@
     .container {
         max-width: 720px;
     }
+    .hamburger {
+        right: 20px;
+    }
+    .promo {
+        background-position: right;
+        background-size: 200%;
+        &__titles, &__btns {
+            padding-left: 70px;
+            &__title_about {
+                width: 120px;
+                margin-left: 10px;
+            }
+        .promo__title {
+            font-size: 38px;
+        }    
+        }
+    }
+    .menu__block {
+        width: 250px;
+    }
 }
 
 @media (max-width: 768px) {
     .container {
-        max-width: 540px;
+        padding-left: 70px;
+        max-width: 550px;
         }
+    .hamburger {
+        right: 20px;
+    }    
+    .promo {
+        background-position: left;
+        background-size: 250%;
+
+        &__title {
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
+    .menu__block {
+        width: 250px;
+    }
 }
 
 @media (max-width: 576px) {
     .container {
         width: 100%;
-        padding: 0 10px;
+        padding: 0 10px 0 0;
         }
+    .hamburger {
+        right: 20px;
+    }
+    .promo {
+        background-size: 360%;
+    }
+    .promo__title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .promo__btns {
+        &__title_about {
+            width: 90px;
+            margin-left: 30px;
+            margin-right: -50px;
+        }
+    }
+    .promo__btns__title_about {
+        width: 130px;
+    }
+    .menu__block {
+        width: 250px;
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        background-size: 520%;
+    }
+    .hamburger {
+        right: 10px;
+    }
+    .menu__block {
+        width: 250px;
+    }
 }
