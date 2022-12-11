@@ -31,16 +31,17 @@
             &__title_about {
                 width: 120px;
                 margin-left: 10px;
-            }
-        .promo__title {
-            font-size: 38px;
-        }    
+            } 
         }
+        &__title {
+            width: 600px;
+        }    
     }
     .menu__block {
         width: 250px;
     }
 }
+
 
 @media (max-width: 768px) {
     .container {
@@ -53,10 +54,16 @@
     .promo {
         background-position: left;
         background-size: 250%;
-
+        &__titles {
+            width: 700px;
+        }
         &__title {
             font-size: 35px;
             line-height: 40px;
+            width: 500px;
+        }
+        &__block {
+            width: 100%;            
         }
     }
     .menu__block {
@@ -74,10 +81,14 @@
     }
     .promo {
         background-size: 360%;
+        &__block {
+            margin-left: -10px;
+        }
     }
     .promo__title {
         font-size: 35px;
         line-height: 40px;
+        width: 300px;
     }
     .promo__btns {
         &__title_about {
@@ -108,4 +119,8 @@
     .menu__block {
         width: 250px;
     }
+    .promo__title {
+        width: 250px;
+    }
+
 }
