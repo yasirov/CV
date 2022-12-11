@@ -53,7 +53,7 @@
 }
 @media (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 550px;
         padding: 0 15px;
     }
     .about {
@@ -62,7 +62,7 @@
             grid-template: 600px auto auto / auto;
         }
     &__photo {
-        min-width: 100%;
+        min-width: 520px;
     }
     &__subtitle {
         font-size: 24px;
@@ -70,38 +70,44 @@
     &__descr {
         grid-column: unset;
         grid-row: unset;
-        max-width: 100%;
+        max-width: 520px;
     }
     &__skills, &__skill {
+        padding-left: 10px;
         grid-column: unset;
         grid-row: unset;
         grid-template-rows: 100px;
     }
     &__skills {
-        grid-template-columns: repeat(2, 280px);
+        grid-template-columns: repeat(2, 200px);
         justify-content: space-around;
+        column-gap: 23px;
     }
     &__skill {
         &__subtitle {
-        width: 200px;    
+        width: 170px;    
         }
     }
     }
 }
 @media (max-width: 576px) {
     .container {
-        width: 350px;
+        width: 360px;
+        padding: 0 5px;
     }
     .about {
         &__wrapper {
-            grid-template: 1fr / 350px;
+            grid-template: 1fr / 360px;
         }
         &__photo {
-            min-width: 100%;
+            min-width: calc(100% - 10px);
             object-fit: cover;
         }
         &__skills {
             grid-template: repeat(3, minmax(100px, auto)) / 1fr;
+        }
+        &__text {
+            max-width: 100%;
         }
     }
 }
