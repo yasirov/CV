@@ -1,9 +1,14 @@
 @media (max-width: 1250px) {
     .container {
-        width: 250px;
+        width: 950px;
     }
     .contacts {
-        display: none;
-        background-color: red;
+        &__wrapper {
+            grid-template-columns: 300px 585px;
+            column-gap: 50px;
+        }
+        &__photo {
+            width: 300px;
+        }
     }
 }
