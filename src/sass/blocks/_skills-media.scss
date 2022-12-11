@@ -2,19 +2,9 @@
     .container {
         width: 950px;
     }
-    .education {
+    .skills {
         &__wrapper {
-
-        }
-    }
-}
-@media (max-width: 992px) {
-    .container {
-        width: 750px;
-    }
-    .education {
-        &__wrapper {
-            
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
@@ -22,17 +12,10 @@
     .container {
         width: 550px;
     }
-}
-@media (max-width: 576px) {
-    .container {
-            width: 350px;
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
-
-@media (max-width: 376px) {
-    .container {
-            width: 100%;
-            padding: 0 5px 0 5px;
-        }
 }
 
