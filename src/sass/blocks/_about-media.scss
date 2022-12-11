@@ -97,10 +97,11 @@
     }
     .about {
         &__wrapper {
-            grid-template: 1fr / 360px;
+            grid-template: 1fr / 1fr;
         }
         &__photo {
-            min-width: calc(100% - 10px);
+            min-width: 100%;
+            min-height: 100%;
             object-fit: cover;
         }
         &__skills {
@@ -113,6 +114,26 @@
 }
 
 @media (max-width: 376px) {
-
+    .container {
+            width: 250px;
+            padding: 0 5px;
+        }
+        .about {
+            &__wrapper {
+                grid-template: 1fr / 360px;
+            }
+            &__photo {
+                width: 100px;
+                object-fit: cover;
+            }
+    
+            &__skills {
+                grid-template: repeat(3, minmax(100px, auto)) / 1fr;
+            }
+    
+            &__text {
+                max-width: 900%;
+            }
+        }
 }
 
