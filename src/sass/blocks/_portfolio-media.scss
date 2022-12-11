@@ -16,7 +16,7 @@
                 }
             }
         }
-        &__item_4 {
+        &_4 {
             grid-column: 3 / 4;
             grid-row: 1 / 4;
         img {
@@ -35,9 +35,9 @@
         &__wrapper {
             grid-template-columns: repeat(2, 1fr);
         }
-    }
     &__item_4 {
         display: none;
+    }
     }
 }
 @media (max-width: 576px) {
