@@ -21,12 +21,16 @@
         width: 750px;
     }
     .contacts {
+        padding-top: 80px;
         &__photo {
             width: 250px;
         }
 
         &__form {
-            grid-template-columns: repeat(2, minmax(220px, auto));
+            grid-template-columns: repeat(2, minmax(180px, auto));
+        }
+        &__policy {
+            margin-left: 25px;
         }
     }
 }
