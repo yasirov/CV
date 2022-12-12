@@ -24,8 +24,8 @@
         right: 20px;
     }
     .promo {
-        background-position: right;
-        background-size: 220%;
+        background-position: -700px;
+        background-size: 290%;
         &__titles, &__btns {
             padding-left: 70px;
             &__title_about {
@@ -52,8 +52,9 @@
         right: 20px;
     }    
     .promo {
-        background-position: left;
-        background-size: 290%;
+        background-position: -800px;
+        background-size: 400%;
+        padding-left: 50px;
         &__titles {
             width: 700px;
         }
@@ -81,6 +82,8 @@
     }
     .promo {
         background-size: 440%;
+        background-position: -900px -150px;
+        padding-left: 100px;
         &__block {
             margin-left: -10px;
         }
