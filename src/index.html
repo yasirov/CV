@@ -68,11 +68,11 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#"></a>About me</li>
-                    <li class="menu__link"><a href="#"></a>Education</li>
-                    <li class="menu__link"><a href="#"></a>Abilities</li>
-                    <li class="menu__link"><a href="#"></a>Portfolio</li>
-                    <li class="menu__link"><a href="#"></a>Contacts</li>
+                    <li class="menu__link"><a href="#about"></a>About me</li>
+                    <li class="menu__link"><a href="#education"></a>Education</li>
+                    <li class="menu__link"><a href="#skills"></a>Skills</li>
+                    <li class="menu__link"><a href="#portfolio"></a>Portfolio</li>
+                    <li class="menu__link"><a href="#contacts"></a>Contacts</li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div><img src="img/portrait/anton_yasirov.jpg" alt="portrait_phot_anton_yasirov" class="about__photo"></div> 
@@ -147,7 +147,7 @@
             </div>
         </div>
     </section>
-    <section class="education">
+    <section class="education" id="education">
         <div class="container">
             <h2 class="title title_fz16 education__title title__section__title">Education</h2>
             <div class="title title_fz36 education__subtitle">What I know?</div>
@@ -219,7 +219,7 @@
                 </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <div class="skills__wrapper">
                 <div class="skills__item">
@@ -280,7 +280,7 @@
                             </div>
         </div>
     </section>
-    <section class="portfolio" id="works">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="title title_fz16 portfolio__title title__section__title">Portfolio</div>
             <div class="title title_fz36 portfolio__subtitle">My works</div>
@@ -338,7 +338,7 @@
             </div>
         </div>
     </section> -->
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <divxx><img src="img/portrait/anton_yasirov_2.jpg" alt="anton_yasirov__photo" class="contacts__photo"></divxx>
@@ -355,15 +355,15 @@
                     </div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input required placeholder="Full name" id="name" type="text">
+                            <input required placeholder="Full name" minlength="3" id="name" type="text">
                             <label for="name">Your name</label>
                         </div>
                         <div class="contacts__input">
-                            <input required placeholder="name@mailer.com" id="email" type="email">
+                            <input required placeholder="name@mailer.com" minlength="3" id="email" type="email">
                             <label for="email">Your email</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea placeholder="Type text here..." name="text" id="text"></textarea>
+                            <textarea placeholder="Type text here..." minlength="5" name="text" id="text"></textarea>
                             <label for="text">Your message</label>
                         </div>
                         <div class="contacts__triggers">
@@ -380,5 +380,9 @@
     </section>
 
    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 </html>
