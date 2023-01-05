@@ -63,6 +63,9 @@
         padding: 0 8px 0 8px;
     }
     .contacts {
+        &__wrapper {
+                padding: 0 5px;
+            }
         &__photo {
             width: 100%;
         }
