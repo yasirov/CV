@@ -71,7 +71,9 @@
         }
 
         &__form {
-            grid-template-columns: repeat(2, minmax(180px, auto));
+            grid-template-columns: repeat(2, minmax(auto, auto));
+            max-width: 96%;
+            margin: 30px auto;
         }
     }
 }
